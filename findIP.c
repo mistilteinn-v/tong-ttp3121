@@ -10,7 +10,7 @@ fp = popen("/sbin/ifconfig eth0", "r");
 
 while (fgets(returnData, 64, fp) != NULL)
 {
-
+    printf("%s\n", returnData);
 }
 
 pclose(fp);
